@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate</title>
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+
+    <h1>Hello World</h1>
+    <p>Welcome to the world trade center</p>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'sv,sq,ar,bg,da,en,et,fi,fr,ka,id,ga,is,it,yi,ca,hr,lv,lt,mk,ms,nl,no,pl,ro,ru,sr,sk,sl,es,sv,th,cs,de,uk,hu'
+            }, 'google_translate_element');
+        }
+    </script>
+</body>
+
+</html>
